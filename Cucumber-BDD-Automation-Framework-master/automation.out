@@ -1,16 +1,1 @@
-2023-04-03 16:04:639 INFO  WaitHelper:21 - waiting for element visibilityOf..
-2023-04-03 16:04:851 INFO  WaitHelper:24 - element is visible..
-2023-04-03 16:04:944 INFO  WaitHelper:21 - waiting for element visibilityOf..
-2023-04-03 16:04:421 INFO  ServiceHooks:34 - Login into the application with valid credentials is Failed
-2023-04-03 16:04:538 INFO  WaitHelper:21 - waiting for element visibilityOf..
-2023-04-03 16:04:671 INFO  WaitHelper:24 - element is visible..
-2023-04-03 16:04:939 INFO  WaitHelper:21 - waiting for element visibilityOf..
-2023-04-03 16:04:00 INFO  ServiceHooks:34 - Searching different products after login is Failed
-2023-04-03 16:04:352 INFO  WaitHelper:21 - waiting for element visibilityOf..
-2023-04-03 16:04:516 INFO  WaitHelper:24 - element is visible..
-2023-04-03 16:04:99 INFO  WaitHelper:21 - waiting for element visibilityOf..
-2023-04-03 16:04:711 INFO  ServiceHooks:34 - Searching different products after login is Failed
-2023-04-03 16:04:796 INFO  WaitHelper:21 - waiting for element visibilityOf..
-2023-04-03 16:04:922 INFO  WaitHelper:24 - element is visible..
-2023-04-03 16:04:949 INFO  WaitHelper:21 - waiting for element visibilityOf..
-2023-04-03 16:04:46 INFO  ServiceHooks:34 - Searching different products after login is Failed
+2023-04-04 09:04:216 INFO  ServiceHooks:43 - Calculate using calculator is pass

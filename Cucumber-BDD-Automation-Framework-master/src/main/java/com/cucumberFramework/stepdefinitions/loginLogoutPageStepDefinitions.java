@@ -1,5 +1,7 @@
 package com.cucumberFramework.stepdefinitions;
 
+import cucumber.api.PendingException;
+import cucumber.api.java.en.And;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 
@@ -109,5 +111,16 @@ public class loginLogoutPageStepDefinitions extends TestBase {
 	    loginPage.itemSearchField.submit();
 	    Thread.sleep(5000);
 	}
-	
+
+	@When("^i open calculator in web \"([^\"]*)\"$")
+	public void iOpenCalculatorInWeb(String calurl)  {
+			driver.get(calurl);
+	}
+
+	@And("^i enter  <\"([^\"]*)\">$")
+	public void iEnter(String arg0)  {
+
+
+
+	}
 }
