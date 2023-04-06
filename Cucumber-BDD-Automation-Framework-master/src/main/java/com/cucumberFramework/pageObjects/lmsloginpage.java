@@ -1,7 +1,9 @@
 package com.cucumberFramework.pageObjects;
 
 import com.cucumberFramework.testBase.TestBase;
-import org.openqa.selenium.WebElement;
+
+
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 
 import javax.xml.xpath.XPath;
@@ -19,21 +21,26 @@ public class lmsloginpage extends TestBase {
 
 
     public void inputUserID(String loginid) {
-        userid.sendKeys(loginid);
+//        userid.sendKeys(loginid);
+        driver.findElement(By.xpath("//input[@name=\"user_login_id\"]")).sendKeys(loginid);
 
     }
 
     public void inputpwd(String loginpwd) {
-        password.sendKeys(loginpwd);
+//        password.sendKeys(loginpwd);
+        driver.findElement(By.xpath("//input[@id=\"password\"]")).sendKeys(loginpwd);
 
     }
 
     public void clickloginbButton() {
-        loginbutton.click();
+//        loginbutton.click();
+        driver.findElement(By.xpath("//input[@value=\"Sign In\"]")).click();
     }
 
     public Boolean landingpage(){
-      return  Islandingpage.isDisplayed();
+//      return  Islandingpage.isDisplayed();
+       return  driver.findElement(By.xpath("//*[contains(text(),' LMS')]")) .isDisplayed();
+
     }
 
 }

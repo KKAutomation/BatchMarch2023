@@ -8,4 +8,4 @@ Feature: this feature is to test lms application
     Then user should see landing page
     Examples:
     |url|userid|password|
-    |https://zemusidemo.in|admin|password|
+    |https://zemusidemo.in|admin|7676password|
