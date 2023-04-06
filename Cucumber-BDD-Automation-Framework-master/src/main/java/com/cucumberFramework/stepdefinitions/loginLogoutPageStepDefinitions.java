@@ -1,6 +1,7 @@
 package com.cucumberFramework.stepdefinitions;
 
 import com.cucumberFramework.pageObjects.CalculatorPage;
+import com.cucumberFramework.pageObjects.lmsloginpage;
 import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import org.junit.Assert;
@@ -17,6 +18,11 @@ import cucumber.api.java.en.When;
 
 
 public class loginLogoutPageStepDefinitions extends TestBase {
+
+
+    lmsloginpage lmspage = new lmsloginpage();
+
+
     CalculatorPage cp = new CalculatorPage();
 
     @When("^i open calculator in web \"([^\"]*)\"$")
@@ -52,7 +58,42 @@ public class loginLogoutPageStepDefinitions extends TestBase {
 
     @Then("^it should display result as \"([^\"]*)\"$")
     public void itShouldDisplayResultAs(String result) {
-		Assert.assertTrue(cp.getoutput().equalsIgnoreCase(result));
+        Assert.assertTrue(cp.getoutput().equalsIgnoreCase(result));
 
     }
+
+    //*********************************************************************************
+    @When("^user open lms system using \"([^\"]*)\"$")
+    public void userOpenLmsSystemUsing(String url) {
+        driver.get(url);
+
+
+    }
+
+
+    @And("^enter \"([^\"]*)\"$")
+    public void enter(String uid) {
+
+        lmspage.inputUserID(uid);
+
+    }
+
+
+    @And("^enter password \"([^\"]*)\"$")
+    public void enterPassword(String pwd) {
+        lmspage.inputpwd(pwd);
+    }
+
+    @And("^click submit button$")
+    public void clickSubmitButton() {
+        lmspage.clickloginbButton();
+    }
+
+    @Then("^user should see landing page$")
+    public void userShouldSeeLandingPage() {
+        Assert.assertTrue(lmspage.landingpage());
+
+    }
+
+
 }
