@@ -9,3 +9,7 @@ Feature: this feature is to test lms application
     Examples:
     |url|userid|password|
     |https://zemusidemo.in|admin|7676password|
+
+
+    Scenario Outline: create add student to the system
+      When user login to the system with "<userid>" and "<password>"
